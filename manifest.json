@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Container Tabs Manager",
+  "version": "1.0",
+
+  "description": "Close and restore tabs into your containers",
+  "homepage_url": "https://github.com/Fitz3012/container-tabs-manager/tree/main",
+  "icons": {
+    "48": "icons/main.svg"
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "cookies",
+    "contextualIdentities",
+    "management",
+    "storage",
+    "unlimitedStorage",
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/main.svg",
+    "default_title": "Container Tabs Manager",
+    "default_popup": "popup/index.html"
+  }
+}

@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Inter-Regular.woff2") format("woff2");
+}
+
+html,
+body {
+    block-size: 100%; /* Bugfix: issue 948 */
+
+    /* stylelint-disable */
+    scrollbar-width: none;
+    /* stylelint-enable */
+    transition: height 0.1s ease-in-out;
+
+    background-color: #42404c;
+    color: #f9f9fa;
+    font-size: 13px;
+}
+
+body {
+    background-color: #42404c;
+    color: #f9f9fa;
+    font-family: "Inter", sans-serif;;
+    font-size: 13px;
+    inline-size: 352px;
+    letter-spacing: -0.125px;
+    min-inline-size: 352px;
+}
+
+#header {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#information {
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: #2b2a33;
+    color: #f9f9fa;
+
+    border: none;
+    align-items: center;
+    block-size: 32px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hide {
+    display: none !important;
+}
+
+#message {
+    display: flex;
+    flex: 1;
+    padding: 5px 10px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#message.success {
+    background-color: #66a7cc;
+}
+
+#message.warning {
+    background-color: #cc8166;
+}
+
+.button:hover {
+    background-color: #52525e;
+}
+
+.container {
+    display: flex;
+}
+
+.container-name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.container-name span {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.container-actions {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
